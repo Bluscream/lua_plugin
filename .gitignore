@@ -41,6 +41,4 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
-quickban/commands.lua
-quickban/events.lua
-quickban/init.lua
+quickban/*
