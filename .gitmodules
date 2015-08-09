@@ -1,0 +1,3 @@
+[submodule "TS3Viewer"]
+	path = TS3Viewer
+	url = git@github.com:renepreuss/TS3Viewer.git
