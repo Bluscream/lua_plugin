@@ -43,3 +43,4 @@ Temporary Items
 .apdisk
 quickban/commands.lua
 quickban/events.lua
+quickban/init.lua
