@@ -1,0 +1,41 @@
+============== CHANGELOG ==============
+
+* Version 1.2.1
+----------------------------------------
+== Fixed a critical bug in the Help system, help commands now work properly.
+
+
+* Version 1.2
+----------------------------------------
+== Fixed a bug with private sounds, users who sent it didn't hear them.
+== Added a sound stats system. (.sound stats)
+== Added a top max preference to Sounds preferences.
+
+* Version 1.1.1
+----------------------------------------
+== Fixed a critical bug in the sounds system.
+
+
+* Version 1.1
+----------------------------------------
+== Updated preferences system, includes restricting and custom values.
+== Updated sounds system, now has combine-able sound types.
+== Added an automatic updater, FrigydUpdater.exe, run it to check for updates.
+== Updated the help system, now has more details and examples.
+== Fixed a few bugs in the admin system.
+
+* Version 1.0
+----------------------------------------
+== Fixed the Frigyd/Systym conflict, you can now have both in the same folder.
+== Fixed errors when automatically adding yourself as the bot host, and as super admin. Sorry about that, follow the readme and you should have no troubles.
+== Re-did most of the Help system, it now supports admin-only commands.
+== Admin commands have been added to the Help system. (.help admin).
+== Added logging of spamming, kicking, banning, and blocking. These logs are saved in the frigyd folder in "LOGS.txt"
+== Added detection of loaded modules.
+== Added AFK system. It's off by default, look in the preferences to turn it on.
+== *SOUNDS*  Added Private sounds. (.s p *USERNAME* *sound*)
+== *SOUNDS*  Added Anonymous sounds. (.s a *sound*)
+
+============ OLD =======================
+* Beta 2.1
+== Fixed a bug with showing an unset default channel value. Preferences for the bot should now show up.

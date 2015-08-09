@@ -1,0 +1,18 @@
+--------------------------------------------------------------
+-- 		  League of Legends Randomizer version 1.1  --
+--				  		 	    --
+--	  by Andrew Brennan (mJrA) and Michael Lubos(xQyz)  --
+--		  is licensed under a Creative Commons 	    --
+--		  Attribution-NonCommercial-ShareAlike      --
+--			  4.0 International License         --
+--------------------------------------------------------------
+
+
+version 1.1
+- added check for duplicate roles
+- added check for duplicate champions
+- added welcome Text with available commands
+- added new command "(start)"
+
+version 1.0 
+-intial release

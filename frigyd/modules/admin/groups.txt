@@ -1,0 +1,6 @@
+1::Normal::black::b::s,c::::10
+2::Trusted::darkgreen::b::s,c::::25
+3::Mod::blue::b,u::s,c,bot,k::k::50
+4::Admin::red::b::a,k,b,s,c,bot::k,b::75
+5::Super Admin::darkred::b,u::a,k,b,s,c,bot::k,b,afk::100
+6::Ignored::#aa0000::b::::::1

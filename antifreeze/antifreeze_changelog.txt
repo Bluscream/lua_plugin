@@ -1,0 +1,40 @@
+===============================================================================
+                          Antifreeze - Plugin Change Log
+                               Copyright Screech
+                  http://screech.me/ts3/plugins/antifreeze.html
+===============================================================================
+   + Added feature or noticeable improvement
+   - Bug fix or something removed
+   * Changed or Information
+   ! Important - Take note!
+===============================================================================
+
+=== Plugin Release 1.06 (13.05.2014)
++ Added additional protection
+
+=== Plugin Release 1.05 (12.05.2014)
++ Audio notice that something was blocked.
+- Lua plugin will attempt to remove c++ version of the plugin.
+
+=== Plugin Release 1.04 (11.05.2014)
+* Back to LUA so you can read the source.
++ Now blocks the chat clear message that is very annoying if it persist a 
+	restart
+! Because the previous version was a C++ plugin, if you installed 1.03 you 
+	should disable the Antifreeze plugin since 1.04 is using the LUA plugin 
+	again. 1.04 protects better than 1.03 and no need for to processes doing 
+	the same task.
+
+=== Plugin Release 1.03 (10.05.2014)
+* Converted to compiled Plugin
++ Protects from malicious pokes now also.
++ Now using TS3 one_click installer
+
+=== Plugin Release 1.02 (08.05.2014)
+- Less strict to better detect crash attempts.
+ 
+=== Plugin Release 1.01 (05.05.2014-later that day)
+- Fix that user names with spaces are shown right in client URL.
+ 
+=== Plugin Release 1.00 (05.05.2014)
++ Initial release as LUA script module

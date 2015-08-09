@@ -1,0 +1,15 @@
+/lua load advancedmasscontrol.lua - Activate
+/lua run getMyChanID - Show the current channel ID that you are in
+/lua run mp <message> - Mass Poke Script (within currently subscribed channel)
+/lua run mmsg <message> - Mass Messaging Script (within currently subscribed channel)
+/lua run mmp <message> - Mass Message & Poke Script (within currently subscribed channel)mesaj - POKE
+/lua run mm - Mass Mover Script (within currently subscribed channel)
+/lua run gmm - Global Mass Mover Script (subscribe all possible channels before moving)
+/lua run gmp <message> - Global Mass Poke Script (subscribe all possible channels before moving)
+/lua run gmmsg <message> - Global Mass Message Script (subscribe all possible channels before moving)
+/lua run gmmp <message> - Global Mass Message & Poke Script (subscribe all possible channels before moving)
+/lua run mk sebeb - Mass Kick Script (within currently subscribed channel)
+/lua run mck sebeb - Mass Channel Kick Script (within currently subscribed channel)
+/lua run mb <Duraction> <message> - Mass Ban Script (within currently subscribed channel) (Fixed)
+/lua run md - Mass Channel Delete Script (Deletes All Channels) (NEW)
+

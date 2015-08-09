@@ -1,0 +1,8 @@
+a::Admin::p
+c::Commands::p
+k::Kick::p,i
+b::Ban::p,i
+bot::Bot::p
+s::Sounds::p
+sh::Shop::p,i
+afk::AFK::i

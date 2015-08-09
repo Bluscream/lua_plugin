@@ -1,0 +1,62 @@
+Ahri
+Akali
+Anivia
+Annie
+Azir
+Brand
+Cassiopeia
+Cho Gath
+Diana
+Elise
+Ezreal
+Fiddlesticks
+Fiora
+Fizz
+Galio
+Gangplank
+Gragas
+Heimerdinger
+Janna
+Jayce
+Karma
+Karthus
+Kassadin
+Katarina
+Kayle
+Kennen
+Kha Zix
+Kog Maw
+LeBlanc
+Lee Sin
+Lissandra
+Lulu
+Lux
+Malphite
+Malzahar
+Maokai
+Mordekaiser
+Morgana
+Nidalee
+Nunu
+Orianna
+Pantheon
+Rumble
+Ryze
+Sona
+Soraka
+Swain
+Syndra
+Talon
+Teemo
+Tristana
+Twisted Fate
+Veigar
+Vel Koz
+Viktor
+Vladimir
+Xerath
+Yasuo
+Zed
+Ziggs
+Zilean
+Zyra

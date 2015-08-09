@@ -1,0 +1,1 @@
+u can delete these items without any problems they will be created if u start the code. If u end the script until the reset message comes the files will be deleted. Dont delete the folder thought

@@ -1,0 +1,24 @@
+﻿//Info
+name::General
+desc::General sounds
+owner::none
+public::true
+//Sounds
+!.wav::!::false
+bill.wav::bill::false
+bison-yes.wav::bison yes,yes yes,yes!::false
+Buttsauce.wav::Buttsauce::false
+cable-jerkoff.wav::cable jerkoff,jo::false
+Fuck.wav::Fuck::false
+gentlemen.wav::gentlemen::false
+haitilaugh-backwards.wav::haitilaugh backwards::false
+haitilaugh.wav::haitilaugh::false
+hoopla.wav::hoopla::false
+likeaboss.wav::likeaboss::false
+odb-wut.wav::odb wut::false
+pills.wav::pills::false
+pricefail.wav::pricefail::false
+Yeah.wav::Yeah::false
+shutthefuckup.wav::shutthefuckup::false
+surprisemofo.wav::surprise mofo::false
+umad.wav::u mad::false

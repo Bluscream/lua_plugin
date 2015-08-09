@@ -1,0 +1,51 @@
+Aatrox
+Alistar
+Blitzcrank
+Cho Gath
+Darius
+Diana
+Dr. Mundo
+Elise
+Evelynn
+Fiddlesticks
+Gangplank
+Gragas
+Hecarim
+Jarvan IV
+Jax
+Kha Zix
+Lee Sin
+Leona
+Malphite
+Maokai
+Master Yi
+Nasus
+Nautilus
+Nidalee
+Nocturne
+Nunu
+Olaf
+Pantheon
+Poppy
+Rammus
+Renekton
+Rengar
+Riven
+Sejuani
+Shaco
+Shen
+Shyvana
+Sion
+Skarner
+Trundle
+Tryndamere
+Twitch
+Udyr
+Vi
+Volibear
+Warwick
+Wukong
+Xin Zhao
+Yasuo
+Yorick
+Zac

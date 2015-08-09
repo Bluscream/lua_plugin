@@ -1,0 +1,19 @@
+---> TS3 SYNC FTP PLUGIN <---
+----------------------------------------
+Vist our site and translate it to english (Our tutorial is the best) we hope so
+http://teamspeak.az.pl/
+Created by polski
+--------------------------------------------------------------------------
+~OVERVIEW~
+This plugin extends the ability to synchronize config files to a remote FTP server (SFTP or SCP protocols AND over SSH-1 and SSH-2 after editing plug-in parameters).
+For more options in sync please wist http://winscp.net/ find help using term "batch scripting"
+
+
+~INSTALATION~
+
+Just install it by open synchronizer.ts3_plugin 
+Plugin installer do the rest work. 
+
+Restart teamspeak and chceck out Plugins->Lua Plugin menu options. 
+
+	

@@ -1,0 +1,53 @@
+Aatrox
+Akali
+Alistar
+Braum
+Cho Gath
+Darius
+Dr. Mundo
+Fiora
+Gangplank
+Garen
+Gnar
+Gragas
+Irelia
+Jarvan IV
+Jax
+Jayce
+Katarina
+Kayle
+Lee Sin
+Leona
+Lulu
+Malphite
+Maokai
+Master Yi
+Mordekaiser
+Nasus
+Olaf
+Pantheon
+Poppy
+Rammus
+Renekton
+Rengar
+Riven
+Rumble
+Ryze
+Shen
+Shyvana
+Singed
+Sion
+Trundle
+Tryndamere
+Urgot
+Udyr
+Vi
+Vladimir
+Volibear
+Warwick
+Wukong
+Xin Zhao
+Yasuo
+Yorick
+Zac
+Zed
