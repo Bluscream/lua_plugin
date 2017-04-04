@@ -49,3 +49,7 @@ ts3errors.lua
 ts3events.lua
 ts3init.lua
 testmodule/
+
+#NoX stuff
+NoX/LICENSE.MD
+NoX/.gitignore

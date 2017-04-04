@@ -1,4 +1,5 @@
 require("ts3init")
+log = 0
 function ScriptLog(logMSG)
 	if nox.setting.debug == true then
 		local tsCol = { 'Green', 'Black', 'Red', 'Blue' }
@@ -14,15 +15,19 @@ if nox.setting.active == false then
 	return
 end
 require("NoX/functions")
+getIDList()
 require("NoX/events")
 local registeredEvents = {
 	onClientChannelGroupChangedEvent = antiX_events.onClientChannelGroupChangedEvent,
+	onServerGroupClientAddedEvent = antiX_events.onServerGroupClientAddedEvent,
 	onServerUpdatedEvent = antiX_events.onServerUpdatedEvent,
 	onConnectStatusChangeEvent = antiX_events.onConnectStatusChangeEvent,
+	onClientKickFromServerEvent = antiX_events.onClientKickFromServerEvent,
 	onClientKickFromChannelEvent = antiX_events.onClientKickFromChannelEvent,
 	onClientMoveEvent = antiX_events.onClientMoveEvent,
-	onServerErrorEvent = antiX_events.onServerErrorEvent
+	onClientMoveMovedEvent = antiX_events.onClientMoveMovedEvent,
+	onClientSelfVariableUpdateEvent = antiX_events.onClientSelfVariableUpdateEvent
 }
 ScriptLog("init.lua loaded...")
 ts3.printMessageToCurrentTab(nox.info.name.." v"..nox.info.ver.." by "..nox.info.author.." loaded successfully!")
-ts3RegisterModule(nox.info.MODULE, registeredEvents)
+ts3RegisterModule("NoX", registeredEvents)
