@@ -1,6 +1,6 @@
 nox = {
 	info = {
-		name = "No X Module", -- 
+		name = "No X Module", --
 		prefix = "NoX",
 		folder = "NoX",
 		ext = "lua",
@@ -11,14 +11,14 @@ nox = {
 		active = true, -- Enable the script.
 		debug = true, -- The script show debug messages.
 		archivebuilds = {
-			enabled = true, -- Will create files that contain all client versions that you have ever seen.
+			enabled = false, -- Will create files that contain all client versions that you have ever seen.
 			path = "D:\\Coding\\Projekte\\Teamspeak-Plugins\\builds",
 		},
 		password = {
 			server = "123",
 			channel = "123",
 		},
-		ownchat = true, -- Opens a chat with yourself as notepad.
+		ownchat = false, -- Opens a chat with yourself as notepad.
 		failsave = false, -- If the antichannelban is not working as intended set this to true and try again.
 		slowmode = true, -- If this is enabled the script will not instantly reconnect when you get a channel ban group, only after you also got kicked. (Enable only this or auto_slowmode)
 		capture_profile = "", -- You can reconnect with a non-default Capture Profile when channel banned, usefull for screaming.
@@ -28,14 +28,14 @@ nox = {
 		use_all_ids = false, -- If true, uses all IDs that you have, even your default one. If false, only the ones starting with "IDPrefix" will be used.
 		BanGroups = { 12, 16, 11 }, -- Channel Group ID's that should be detected as "Channel-Ban" groups.
 		SpamGroups = { 13, 14 }, -- Channel Group ID's that should be detected as "Channel-Anti-Spam" groups.
-		antiservergroup = true,
+		antiservergroup = false,
 		BadServerGroups = { 76, 66, 67, 68, 192, 193, 73 },
 		antimove = {
 			enabled = true, -- Auto switch back when moved.
 			filter = {
 				enabled = true,
 				uids = { 'serverquery' },
-				allowedservergroups = { 64, 65, 194 },
+				allowedservergroups = { 9, 27, 26, 22, 25, 23, 21, 19, 29, 28 },
 			},
 		},
 		antidelete = {
@@ -61,12 +61,7 @@ nox = {
 						UID = "FI9+KF1c/BKx5dlFejAs8OJpnO0=",
 						BadChannelGroups = { 12, 13 },
 						BadServerGroups = { 13, 14 },
-					},
-					mtG = {
-						UID = "LpfWDi8tO9blye3wZXZZ76uPAM8=",
-						BadChannelGroups = { 12, 13 },
-						BadServerGroups = { 13, 12 },
-					},
+					}
 				},
 			},
 			server = true, -- Auto reconnect when you get banned from a server.
