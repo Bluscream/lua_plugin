@@ -41,6 +41,11 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
-quickban/*
-followme/*
-SaxBot/*
+
+#Teamspeaks Files
+ts3autoload.lua
+ts3defs.lua
+ts3errors.lua
+ts3events.lua
+ts3init.lua
+testmodule/
