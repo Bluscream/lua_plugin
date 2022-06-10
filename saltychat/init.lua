@@ -6,7 +6,7 @@
 require("ts3init")            -- Required for ts3RegisterModule
 -- require("fivem/table.save")
 
-local MODULE_NAME = "fivem"
+local MODULE_NAME = "saltychat"
 
 local clients_muted = {}
 local clients_name = {}
@@ -21,11 +21,11 @@ function urlencode(str)
 	return str    
  end
 local function getTimeStamp()
-	return "[color=#33597D]<"..os.date("%X")..">[/color]"
+	return "[color=#1a91d0] (ℹ️)[color=#507d70]<"..os.date("%X")..">"
 end
-ts3.printMessageToCurrentTab(getTimeStamp() .. "loading fivem/init.lua")
+-- ts3.printMessageToCurrentTab(getTimeStamp() .. "loading saltychat/init.lua")
 local function getClientLink(clid, uid, name)
-	return "[b][color=#002F5D]\"[URL=client://"..clid.."/"..uid.."~"..urlencode(name).."]"..name.."[/URL]\"[/color][/b]"
+	return "[b][color=#1cb0f4]\"[URL=client://"..clid.."/"..uid.."~"..urlencode(name).."]"..name.."[/URL]\"[/color][/b]"
 end
 
 local function onConnectStatusChangeEvent(serverConnectionHandlerID, status, errorNumber)
@@ -93,4 +93,4 @@ local registeredEvents = {
 -- Register your callback functions with a unique module name.
 ts3RegisterModule(MODULE_NAME, registeredEvents)
 
-ts3.printMessageToCurrentTab(getTimeStamp() .. "loaded fivem/init.lua")
+-- ts3.printMessageToCurrentTab(getTimeStamp() .. "loaded saltychat/init.lua")
