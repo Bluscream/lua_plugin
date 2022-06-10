@@ -43,17 +43,20 @@ local function onClientMoveEvent(serverConnectionHandlerID, clientID, oldChannel
 end
 
 local function onUpdateClientEvent(serverConnectionHandlerID, clid, invokerID, invokerName, invokerUniqueIdentifier)
-	if invokerID ~= clid then return end
-
+	if invokerID ~= 0 then return end
 	local myId = ts3.getClientID(serverConnectionHandlerID)
-	local myChannel, error = ts3.getChannelOfClient(serverConnectionHandlerID, myId)
-	local theirChannel, error = ts3.getChannelOfClient(serverConnectionHandlerID, clid)
-	if theirChannel ~= myChannel then return end
+	if clid == myId then return end
 
 	local client_isMuted, error = ts3.getClientVariableAsInt(serverConnectionHandlerID,clid,ts3defs.ClientProperties.CLIENT_IS_MUTED)
 	local client_wasMuted = clients_muted[clid]
 	clients_muted[clid] = client_isMuted
 	if client_wasMuted  == nil then return end
+
+	
+	local myChannel, error = ts3.getChannelOfClient(serverConnectionHandlerID, myId)
+	local theirChannel, error = ts3.getChannelOfClient(serverConnectionHandlerID, clid)
+	if theirChannel ~= myChannel then return end
+
 	local name, error = ts3.getClientVariableAsString(serverConnectionHandlerID, clid, ts3defs.ClientProperties.CLIENT_NICKNAME)
 	local uid, error = ts3.getClientVariableAsString(serverConnectionHandlerID, clid, ts3defs.ClientProperties.CLIENT_UNIQUE_IDENTIFIER)
 	if clients_name[clid]  ~= nil then
@@ -68,20 +71,6 @@ local function onUpdateClientEvent(serverConnectionHandlerID, clid, invokerID, i
 	ts3.printMessageToCurrentTab(txt)
 end
 
-local function onMenuItemEvent(serverConnectionHandlerID, menuType, menuItemID, selectedItemID)
-	if menuItemID == 0 then
-		ts3.printMessageToCurrentTab("match: " .. string.match(clientName, "^[%d+] "))
-	end
-end
-
-function test(serverConnectionHandlerID, ...)
-	ts3.printMessageToCurrentTab("test1")
-	local argMsg = ""
-	ts3.printMessageToCurrentTab("test2")
-	ts3.printMessageToCurrentTab("test3")
-	ts3.printMessageToCurrentTab(argMsg .. " match: " .. string.match(arg[0], "^[%d+] "))
-end
-
 function muteall(serverConnectionHandlerID)
 	local clients, error = ts3.getClientList(serverConnectionHandlerID)
 	ts3.requestMuteClients(serverConnectionHandlerID, clients)
@@ -91,43 +80,14 @@ function unmuteall(serverConnectionHandlerID)
 	ts3.requestUnmuteClients(serverConnectionHandlerID, clients)
 end
 
-local function createMenus(moduleMenuItemID)
-	-- Store value added to menuIDs to be able to calculate menuIDs for this module again for setPluginMenuEnabled (see demo.lua)
-	testmodule_events.moduleMenuItemID = moduleMenuItemID
-
-	-- Create the menus
-	-- There are three types of menu items:
-	--   ts3defs.PluginMenuType.PLUGIN_MENU_TYPE_CLIENT:  Client context menu
-	--   ts3defs.PluginMenuType.PLUGIN_MENU_TYPE_CHANNEL: Channel context menu
-	--   ts3defs.PluginMenuType.PLUGIN_MENU_TYPE_GLOBAL:  "Plugins" menu in menu bar of main window
-	--
-	-- Menu IDs are used to identify the menu item when onMenuItemEvent is called, see testmodule/events.lua for the implementation of onMenuItemEvent
-	-- Valid menu IDs are 0 to 999.
-	--
-	-- The menu text is required, max length is 128 characters
-	--
-	-- The icon is optional, max length is 128 characters. When not using icons, just pass an empty string.
-	-- Icons are loaded from a subdirectory in the TeamSpeak client plugins folder. The subdirectory must be named like the
-	-- plugin filename, without dll/so/dylib suffix
-	-- e.g. for "test_plugin.dll", icon "1.png" is loaded from <TeamSpeak 3 Client install dir>\plugins\test_plugin\1.png
-	-- In this example we reuse the existing icons from the plugins\test_plugin\ directory, which resides as "..\test_plugin" relative to
-	-- the lua_plugin directory.
-
-	return {
-		{ts3defs.PluginMenuType.PLUGIN_MENU_TYPE_CLIENT,  0,  "Check Name",  "../test_plugin/1.png"},
-	}
-end
-
 -- Define which callbacks you want to receive in your module. Callbacks not mentioned
 -- here will not be called. To avoid function name collisions, your callbacks should
 -- be put into an own package.
 local registeredEvents = {
-	createMenus = createMenus,
 	onConnectStatusChangeEvent = onConnectStatusChangeEvent,
 	onTalkStatusChangeEvent = onTalkStatusChangeEvent,
 	onUpdateClientEvent = onUpdateClientEvent,
-	onClientMoveEvent = onClientMoveEvent,
-	onMenuItemEvent = onMenuItemEvent
+	onClientMoveEvent = onClientMoveEvent
 }
 
 -- Register your callback functions with a unique module name.
