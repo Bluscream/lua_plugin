@@ -1459,21 +1459,20 @@ function muteownchan(serverConnectionHandlerID)
 	end
 end
 
--- local function mutechan(scH, ch, mode)
-	-- local clients = ts3.getChannelClientList(scH, ch);
-	-- if (mode == 1) then
-		-- ts3.requestMuteClients(scH, clients)
-	-- else
-		-- ts3.requestUnmuteClients(scH, clients)
-	-- end
--- end
-	-- if #mutedClients > #channelClients/2 then
-		-- ts3.requestUnmuteClients(serverConnectionHandlerID, channelClients)
+local function mutechan(scH, ch, mode)
+	local clients = ts3.getChannelClientList(scH, ch);
+	if (mode == 1) then
+		ts3.requestMuteClients(scH, clients)
+	else
+		ts3.requestUnmuteClients(scH, clients)
+	end
+end
+-- 	if #mutedClients > #channelClients/2 then
+-- 		ts3.requestUnmuteClients(serverConnectionHandlerID, channelClients)
 
-	-- else
-		-- ts3.requestMuteClients(serverConnectionHandlerID, channelClients)
-	-- end
-
+-- 	else
+-- 		ts3.requestMuteClients(serverConnectionHandlerID, channelClients)
+-- 	end
 -- end
 function reconnect(serverConnectionHandlerID)
 	local myId = ts3.getClientID(serverConnectionHandlerID)

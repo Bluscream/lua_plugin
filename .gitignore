@@ -43,12 +43,12 @@ Temporary Items
 .apdisk
 
 #Teamspeaks Files
-ts3autoload.lua
-ts3defs.lua
-ts3errors.lua
-ts3events.lua
-ts3init.lua
-testmodule/
+# ts3autoload.lua
+# ts3defs.lua
+# ts3errors.lua
+# ts3events.lua
+# ts3init.lua
+# testmodule/
 
 #NoX stuff
 NoX/LICENSE.MD
