@@ -28,14 +28,6 @@ local function getClientLink(clid, uid, name)
 	return "[b][color=#1cb0f4]\"[URL=client://"..clid.."/"..uid.."~"..urlencode(name).."]"..name.."[/URL]\"[/color][/b]"
 end
 
-local function onConnectStatusChangeEvent(serverConnectionHandlerID, status, errorNumber)
-    ts3.printMessageToCurrentTab("TestModule: onConnectStatusChangeEvent: " .. serverConnectionHandlerID .. " " .. ts3defs.ConnectStatus[status].name .. " " .. errorNumber)
-end
-
-local function onTalkStatusChangeEvent(serverConnectionHandlerID, status, isReceivedWhisper, clientID)
-    ts3.printMessageToCurrentTab("TestModule: onTalkStatusChangeEvent: " .. serverConnectionHandlerID .. " " .. ts3defs.TalkStatus[status].name .. " " .. isReceivedWhisper .. " " .. clientID)
-end
-
 local function onClientMoveEvent(serverConnectionHandlerID, clientID, oldChannelID, newChannelID, visibility, moveMessage)
 	if oldChannelID ~= 0 then return end
 	local clientName, error = ts3.getClientVariableAsString(serverConnectionHandlerID, clientID, ts3defs.ClientProperties.CLIENT_NICKNAME)
@@ -84,8 +76,6 @@ end
 -- here will not be called. To avoid function name collisions, your callbacks should
 -- be put into an own package.
 local registeredEvents = {
-	onConnectStatusChangeEvent = onConnectStatusChangeEvent,
-	onTalkStatusChangeEvent = onTalkStatusChangeEvent,
 	onUpdateClientEvent = onUpdateClientEvent,
 	onClientMoveEvent = onClientMoveEvent
 }
